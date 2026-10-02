@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alireza Abbaszadeh (AiAli) | Academic Research & Systems Engineering</title>
+  <meta name="description" content="Academic mirror and research gateway of Alireza Abbaszadeh (AiAli). Continuous-time state-space models (SSM), Operations Research multi-UAV routing, Bio-signal conformer AI, and distributed systems.">
+  <meta name="keywords" content="Alireza Abbaszadeh, AiAli, aiali, aiali.ir, Dr. AI Ali, Continuous-Time SSM, Mamba drift, Multi-UAV routing, TR-E, ECG classification, Apache Spark distributed, IAUM">
+  <meta name="author" content="Alireza Abbaszadeh">
+  <link rel="canonical" href="https://aiali.ir/">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://alirezaabbaszadeh.github.io/">
+  <meta property="og:title" content="Alireza Abbaszadeh (AiAli) - AI & Systems Researcher">
+  <meta property="og:description" content="Official GitHub Pages academic gateway for Alireza Abbaszadeh. Explore publications, teaching appointments, and open-source benchmarks.">
+  <meta property="og:image" content="https://aiali.ir/og-image.png">
+
+  <!-- Schema.org Knowledge Graph Grounding -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://aiali.ir/#person",
+    "name": "Alireza Abbaszadeh",
+    "alternateName": ["AiAli", "Dr. AI Ali"],
+    "jobTitle": "Artificial Intelligence Researcher & Systems Engineer",
+    "url": "https://aiali.ir",
+    "sameAs": [
+      "https://orcid.org/0009-0007-8253-6042",
+      "https://www.researchgate.net/profile/Alireza-Abbaszadeh",
+      "https://scholar.google.com",
+      "https://linkedin.com/in/alirezaabbaszadeh",
+      "https://github.com/alirezaabbaszadeh",
+      "https://alirezaabbaszadeh.github.io"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Islamic Azad University of Mashhad (IAUM)"
+    },
+    "knowsAbout": [
+      "Continuous-Time State-Space Models (SSM)",
+      "Combinatorial Optimization & Operations Research",
+      "Biomedical ECG Conformer Architecture",
+      "Distributed Big Data Systems (Apache Spark)",
+      "High-Throughput Reinforcement Learning (Isaac Gym)"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #030712;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.25);
+      --cyan: #06b6d4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-family: monospace;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #ffffff 40%, #a7f3d0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+    }
+    .portal-banner {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(6, 182, 212, 0.1));
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.75rem;
+    }
+    .portal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #030712;
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+    .portal-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .repo-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-bottom: 2.5rem;
+    }
+    .repo-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s;
+    }
+    .repo-item:hover {
+      border-color: var(--cyan);
+    }
+    .repo-name {
+      font-family: monospace;
+      color: #38bdf8;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .repo-desc {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      margin-top: 0.2rem;
+    }
+    .footer {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">GITHUB PAGES ACADEMIC MIRROR</span>
+      <h1>Alireza Abbaszadeh</h1>
+      <p class="subtitle">AI & Systems Researcher • Continuous-Time Sequence Models (SSM) • Operations Research • Valedictorian (Rank #1)</p>
+      
+      <div class="portal-banner">
+        <div>
+          <strong style="color: #fff; font-size: 1.1rem;">Official Interactive Academic Portal</strong>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">
+            Full interactive papers, live citations, course notes, teaching records, and real-time research updates are served on <strong>aiali.ir</strong>.
+          </p>
+        </div>
+        <a href="https://aiali.ir" class="portal-btn">
+          Visit Primary Portal (aiali.ir) &rarr;
+        </a>
+      </div>
+    </div>
+
+    <h2 class="section-title">Academic & Research Navigation</h2>
+    <div class="grid">
+      <a href="https://aiali.ir/teaching" class="card">
+        <div>
+          <h3>👨‍🏫 Teaching & Governance</h3>
+          <p>Undergraduate recitations, lab instruction, and curriculum leadership in Artificial Intelligence, Soft Computing, Databases, and Networks.</p>
+        </div>
+        <span style="color: var(--accent); font-size: 0.8rem; margin-top: 0.75rem;">aiali.ir/teaching &rarr;</span>
+      </a>
+
+      <a href="https://aiali.ir/publications" class="card">
+        <div>
+          <h3>📚 Research Publications</h3>
+          <p>Peer-reviewed conference manuscripts, journal preprints (*TR-E*, *Elsevier JVCIR*), and BibTeX citation records.</p>
+        </div>
+        <span style="color: var(--accent); font-size: 0.8rem; margin-top: 0.75rem;">aiali.ir/publications &rarr;</span>
+      </a>
+
+      <a href="https://aiali.ir/network" class="card">
+        <div>
+          <h3>🌐 Research Network & Ecosystem</h3>
+          <p>Global academic identity map: ORCID, ResearchGate, Google Scholar, verified code repositories, and laboratory affiliations.</p>
+        </div>
+        <span style="color: var(--accent); font-size: 0.8rem; margin-top: 0.75rem;">aiali.ir/network &rarr;</span>
+      </a>
+
+      <a href="https://aiali.ir/projects" class="card">
+        <div>
+          <h3>💻 Research Engineering</h3>
+          <p>3000x Spark recommendation engine, Lead-Lag quantitative RL, and multi-agent robotics simulations.</p>
+        </div>
+        <span style="color: var(--accent); font-size: 0.8rem; margin-top: 0.75rem;">aiali.ir/projects &rarr;</span>
+      </a>
+
+      <a href="https://aiali.ir/cv" class="card">
+        <div>
+          <h3>📄 Academic CV</h3>
+          <p>Comprehensive curriculum vitae, academic trajectory, valedictorian honors, and doctoral research interests.</p>
+        </div>
+        <span style="color: var(--accent); font-size: 0.8rem; margin-top: 0.75rem;">aiali.ir/cv &rarr;</span>
+      </a>
+
+      <a href="https://aiali.ir/contact" class="card">
+        <div>
+          <h3>📬 Academic Contact</h3>
+          <p>Institutional correspondence for Ph.D. recruitment, collaboration inquiries, and reproducible science.</p>
+        </div>
+        <span style="color: var(--accent); font-size: 0.8rem; margin-top: 0.75rem;">aiali.ir/contact &rarr;</span>
+      </a>
+    </div>
+
+    <h2 class="section-title">Verified Public Repositories</h2>
+    <div class="repo-list">
+      <a href="https://github.com/alirezaabbaszadeh/delta-trust-region-ssm" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">delta-trust-region-ssm</div>
+          <div class="repo-desc">Selective State-Space Models (SSM / Mamba) optimizer drift mitigation and discrete time-step stability.</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+
+      <a href="https://github.com/alirezaabbaszadeh/uav-tr-e-journal-repro" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">uav-tr-e-journal-repro</div>
+          <div class="repo-desc">Exact and metaheuristic solvers (HiGHS MIP, OR-Tools) for multi-UAV routing (*Transportation Research Part E*).</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+
+      <a href="https://github.com/alirezaabbaszadeh/contourlet-steganography-repro" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">contourlet-steganography-repro</div>
+          <div class="repo-desc">Validity-aware contourlet transform image data hiding and adaptive coefficient allocation (*Elsevier JVCIR*).</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+
+      <a href="https://github.com/alirezaabbaszadeh/ECG_Heartbeat_Classification" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">ECG_Heartbeat_Classification</div>
+          <div class="repo-desc">Continuous Morlet Wavelet & Conformer architecture for 5-class beat classification (submitted to Portuguese journal).</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+
+      <a href="https://github.com/alirezaabbaszadeh/KNN-recommendation-System" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">KNN-recommendation-System</div>
+          <div class="repo-desc">Distributed collaborative filtering recommendation engine with 3000x Apache Spark acceleration (B.Sc. Thesis).</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+
+      <a href="https://github.com/alirezaabbaszadeh/RL-lookback-LeadLag-signature" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">RL-lookback-LeadLag-signature</div>
+          <div class="repo-desc">High-throughput GPU-accelerated reinforcement learning leveraging rough path signatures and lead-lag analysis.</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+
+      <a href="https://github.com/alirezaabbaszadeh/iccke25-forex-hybrid" class="repo-item" target="_blank" rel="noopener">
+        <div>
+          <div class="repo-name">iccke25-forex-hybrid</div>
+          <div class="repo-desc">Hybrid residual attention and mixture-of-experts forecasting architecture (*IEEE ICCKE*).</div>
+        </div>
+        <span style="color: var(--text-muted); font-size: 0.8rem;">GitHub &rarr;</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Alireza Abbaszadeh (AiAli). Canonical academic home: <a href="https://aiali.ir">aiali.ir</a></p>
+      <p style="margin-top: 0.35rem;">
+        <a href="https://orcid.org/0009-0007-8253-6042" target="_blank" rel="noopener">ORCID</a> • 
+        <a href="https://www.researchgate.net/profile/Alireza-Abbaszadeh" target="_blank" rel="noopener">ResearchGate</a> • 
+        <a href="https://linkedin.com/in/alirezaabbaszadeh" target="_blank" rel="noopener">LinkedIn</a> • 
+        <a href="https://github.com/alirezaabbaszadeh" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
